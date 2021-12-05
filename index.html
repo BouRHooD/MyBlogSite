@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>BOURHOOD</title>
+  <link rel="stylesheet" href="css/stylesLightAndBlack.css">
+
+  <!-- Vector icons and social logos -->
+  <script src="https://kit.fontawesome.com/321ba5ec09.js" crossorigin="anonymous"></script>
+
+  <style>
+    img[alt="www.000webhost.com"] {
+      display: none;
+    }
+  </style>
+
+  <script type="text/javascript">
+    function changeColor()
+    {
+      var chbox;
+      chbox=document.getElementById("toggle");
+      if (chbox.checked){
+        // Dark theme
+        document.body.style.backgroundColor = "#444";
+        var colorArray = document.getElementsByName('_container_card_face_face1');
+        for (let element of colorArray) { 
+          element.style.backgroundColor = '#333';
+        }
+      }
+      else
+      {
+        // Light theme
+        document.body.style.backgroundColor = "#dfdbe5";
+        var colorArray = document.getElementsByName('_container_card_face_face1');
+        for (let element of colorArray) { 
+          element.style.backgroundColor = '#9c92ac';
+        }
+
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="socialPanel">
+      <div class="social">
+        <a href="https://www.instagram.com/b0urhood/" class="social-item">
+          <img src="img/brand_instagram_icon_151534.png" alt="instagram" />
+        </a>
+      </div>
+
+      <div class="social">
+        <a href="https://vk.com/bourh" class="social-item">
+          <img src="img/25684.png" alt="instagram" />
+        </a>
+      </div>
+
+      <div class="social">
+        <a href="https://www.youtube.com/bourhood" class="social-item" style="margin-left: 3px;">
+          <img src="img/yutube-041cb2a4ceb544d5843529988f459e97.png" alt="youtube" />
+        </a>
+      </div>
+
+      <div class="social">
+        <a href="https://steamcommunity.com/id/bourhood" class="social-item" style="margin-left: -3px;">
+          <img src="img/E1vUvWCVcAE7l2_.svg" alt="steamcommunity" style="height: 30px;" />
+        </a>
+      </div>
+
+      <div class="social">
+        <a href="https://github.com/BouRHooD" class="social-item" style="margin-left: -5px;">
+          <img src="img/github-brands.svg" alt="github" style="height: 30px;" />
+        </a>
+      </div>
+
+      <input type="checkbox" id="toggle" class="toggle--checkbox" onclick="changeColor()" />
+      <label for="toggle" class="toggle--label">
+      <span class="toggle--label-background"></span>
+      </label>
+      <!--<div class="background"></div>-->
+    </div>
+
+    <div class="welcomeInfo">
+      <div class="logo">BOURHOOD</div>
+
+      <div class="info">
+        Right here I write the best things and one day you will know about it
+      </div>
+    </div>
+
+    <div class="cardsPanel">
+
+      <div class="card1">
+        <div class="card">
+          <div class="face face1" name="_container_card_face_face1">
+            <div class="content">
+              <img src="img/SurflayLogo.png" style="height: 100px;">
+              <h3>Surflay</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p> Моя компания, которая занимается всем, чем только может<br><br>
+                Например:<br>
+                1) Разработка и поддержка ПО<br>
+                2) Участие в киберспортивных соревнованиях</p>
+              <a href="https://vk.com/surflay" type="button">Перейти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="face face1" name="_container_card_face_face1">
+          <div class="content">
+            <img src="img/N1yEhLAlXvM.png" style="height: 100px;">
+            <h3>Darling • BouRHooD •</h3>
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <p> Сообщество/группа в которую я выкладываю понравившееся мне вещи<br><br>
+              Здесь вы найдете музыку, разного рода илюстрации, мои проекты, мысли и моё творчество</p>
+            <a href="https://vk.com/b0urhood" type="button">Перейти</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+
+</body>
+
+</html>
